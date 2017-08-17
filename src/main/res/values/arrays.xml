@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="typelist">
+        <item>@string/typeselect</item>
+        <item>@string/typestairs</item>
+        <item>@string/typeledge</item>
+        <item>@string/typerail</item>
+        <item>@string/typeskatepark</item>
+        <item>@string/typeother</item>
+    </string-array>
+</resources>

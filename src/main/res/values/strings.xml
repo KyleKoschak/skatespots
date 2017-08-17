@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Skate Spots</string>
+    <string name="title_activity_maps">Skate Spots</string>
+
+    <!-- Filter hint -->
+    <string name="filterhint">Filter by keywords...</string>
+
+    <!-- Map buttons -->
+    <string name="startnewspot">+</string>
+    <string name="expand">^</string>
+    <string name="filterBtn">Filter</string>
+    <string name="randomBtn">Random</string>
+
+    <!-- Form Buttons -->
+    <string name="subBtn">Submit</string>
+    <string name="backBtn">Back</string>
+    <string name="imageBtn">Add an image...</string>
+
+    <!-- Form Labels -->
+    <string name="nameLabel">(Required) Name:  </string>
+    <string name="descriptionLabel">Description: (This can be size of spot, difficulty, best time
+                                    to skate, etc.)</string>
+    <string name="typeLabel">(Required) Type: </string>
+
+    <!-- Form Types -->
+    <string name="typeselect">Select spot type...</string>
+    <string name="typestairs">Stairs</string>
+    <string name="typeledge">Ledge</string>
+    <string name="typerail">Rail</string>
+    <string name="typeskatepark">Skatepark</string>
+    <string name="typeother">Other</string>
+
+    <!-- Marker Info -->
+    <string name="markername">%1$s</string>
+    <string name="markerdesc">Description: %1$s</string>
+    <string name="markertype">Type: %1$s</string>
+
+    <string name="reportText">Report</string>
+    <string name="editText">Edit</string>
+
+</resources>

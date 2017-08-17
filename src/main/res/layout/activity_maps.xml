@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@android:color/transparent"
+    android:weightSum="2">
+
+    <!-- TOP HALF  (MAP) -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        tools:context="com.main.skatespots.MapsActivity">
+
+        <Button
+            android:id="@+id/expand"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/backgroundnobottomborder"
+            android:layout_gravity="bottom|start"
+            android:padding="0dp"
+            android:textStyle="bold"
+            android:text="@string/expand"
+            android:textSize="@dimen/newspotsize"
+            android:onClick="ExpandBtnOnClick"/>
+
+        <Button
+            android:id="@+id/newspotbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/backgroundnobottomborder"
+            android:layout_gravity="end|bottom"
+            android:padding="0dp"
+            android:textStyle="bold"
+            android:text="@string/startnewspot"
+            android:textSize="@dimen/newspotsize"
+            android:onClick="NewSpotOnClick"/>
+    </fragment>
+
+    <!-- BOTTOM HALF -->
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/background_square">
+
+
+        <!-- ********** -->
+        <!-- CHECKBOXES -->
+        <!-- ********** -->
+
+        <LinearLayout
+            android:id="@+id/checkboxes"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+
+        <!-- Stairs -->
+        <CheckBox
+            android:id="@+id/typestairs"
+            android:text="@string/typestairs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/checkboxFontSize"
+            android:checked="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="-5dp"
+            android:onClick="doCheckboxFiltering"/>
+        <!-- Ledge -->
+
+        <CheckBox
+            android:id="@+id/typeledge"
+            android:text="@string/typeledge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/checkboxFontSize"
+            android:checked="true"
+            android:layout_marginBottom="-5dp"
+            android:onClick="doCheckboxFiltering"/>
+        <!-- Rail -->
+        <CheckBox
+            android:id="@+id/typerail"
+            android:text="@string/typerail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/checkboxFontSize"
+            android:checked="true"
+            android:layout_marginBottom="-5dp"
+            android:onClick="doCheckboxFiltering"/>
+        <!-- Other -->
+        <CheckBox
+            android:id="@+id/typeskatepark"
+            android:text="@string/typeskatepark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/checkboxFontSize"
+            android:checked="true"
+            android:layout_marginBottom="-5dp"
+            android:onClick="doCheckboxFiltering"/>
+        <!-- Other -->
+        <CheckBox
+            android:id="@+id/typeother"
+            android:text="@string/typeother"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/checkboxFontSize"
+            android:checked="true"
+            android:onClick="doCheckboxFiltering"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/filtertext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines = "5"
+            android:layout_toRightOf="@+id/checkboxes"
+            android:layout_toEndOf="@+id/checkboxes"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:cursorVisible="false"
+            android:textAlignment="center"
+            android:hint="@string/filterhint"
+
+            android:background="#ffffff"/>
+
+        <!-- ******* -->
+        <!-- BUTTONS -->
+        <!-- ******* -->
+        <Button
+            android:id="@+id/randomBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/randomBtn"
+            android:onClick="randomBtnOnClick"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="70dp"
+            android:textSize="@dimen/inputFontSize"/>
+
+        <ListView
+            android:id="@+id/spotslist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+        </ListView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textviewHeight">35dp</dimen>
+    <dimen name="textviewWidth">250dp</dimen>
+    <dimen name="marginBottom">35dp</dimen>
+
+    <dimen name="labelFontSize">22sp</dimen>
+    <dimen name="inputFontSize">16sp</dimen>
+    <dimen name="checkboxFontSize">16sp</dimen>
+    <dimen name="reportFontSize">8sp</dimen>
+    <dimen name="infoNameSize">30sp</dimen>
+
+    <dimen name="newspotsize">30sp</dimen>
+</resources>
