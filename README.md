@@ -1,8 +1,12 @@
 # SkateSpots
 
 ## Description
-SkateSpots is an Android app utilizing Google Maps and Firebase Storage/Realtime Databse. Users
+SkateSpots is an Android app utilizing Google Maps and Firebase Storage/Realtime Database. Users
 of the app can place markers on the map for where there is a spot they wish to add to the database.
+
+## Install
+Get the android apk directly from:                                            
+https://drive.google.com/open?id=0B4hy8Ic57978MDVJWHlaRWV3QWZXcWNkd1o1aXJsX21sMVNB
 
 ## Basic Usage
 To add a spot to the map the user must be near the spot and an image of the spot is required. This
