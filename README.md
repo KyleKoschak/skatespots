@@ -2,8 +2,8 @@
 
 ## Description
 SkateSpots is an Android app utilizing Google Maps and Firebase Storage/Realtime Database. Users
-of the app can place markers on the map for where there is a spot or filter through spots around 
-their location.
+of the app can place markers on the map for where there is a spot. Spots on the map can be filtered 
+based on type/descrption in realtime.
 
 ## Install
 Get the android apk directly from:                                            
