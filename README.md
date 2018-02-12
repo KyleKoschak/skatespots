@@ -16,4 +16,7 @@ limits the amount of fake spots that are located on the map.
 The spots can be filtered in realtime based on the type of spot and/or specific keywords that you are 
 looking for.
 
-## Conclusion
+![img1](https://user-images.githubusercontent.com/10703348/36095837-6e07060e-0fb9-11e8-8a81-fdb1ca6420d3.png)
+
+![img2](https://user-images.githubusercontent.com/10703348/36095838-6e28c276-0fb9-11e8-89db-f1c71de439ad.png)
+
